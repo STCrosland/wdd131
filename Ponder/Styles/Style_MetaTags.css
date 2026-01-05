@@ -1,0 +1,29 @@
+/* Body */
+body{
+    background-color: #ddd;
+    font-size: 20px;
+}
+
+/* Main Content*/
+#content {
+    max-width: 60%;
+    border: 1px solid darkgray;
+    margin: 0 auto;
+    padding: 50px; 
+}
+
+
+/* FOOTER */
+footer {
+    background: #b8b7b7;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 900px;
+    text-align: center;
+    padding: 15px;
+    border: 5px solid #fcf80d;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #ffffff;
+    color: #1354ed;
+    text-shadow: 1px 1px 3px #ffffff;
+}
