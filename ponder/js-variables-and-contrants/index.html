@@ -3,57 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Use University Mission Statement with JS to add a drop down menu to change the background">
-    <meta name="author" content="Spencer T. Crosland">
+    <meta name="description" content="An in-depth guide to HTML meta tags.">
+    <meta name="author" content="Stpencer T. Crosland">
+                  
+    <title>Meta Tags and CSS Review</title>
+    <link rel="stylesheet" href="Style.css" />
 
-    <title>Mission Statement</title>
-    <link rel="stylesheet" href="Style.css">
-    <script defer src="mission-2-.js"></script>
 </head>
 
 <body>
 
-    <!-- Header -->
-    <header>
-        <h3>MISSION STATEMENT</h3>
-        <p>BRIGHAM YOUNG UNIVERSITY–IDAHO</p>
-    </header>
-
-    <!-- Main Content -->
-    <main>
-
-        <select id="mode-select">
-            <option value="">Choose Mode</option>
-            <option value="light">Light</option>
-            <option value="dark">Dark</option>
-        </select>
-
-        <div id="Opening">
-            <p>
-                Brigham Young University–Idaho was founded and is supported and guided by The Church of 
-                Jesus Christ of Latter-day Saints. Its mission is to develop disciples of Jesus Christ 
-                who are leaders in their homes, the Church, and their communities.
-            </p>
+    <!--Main content-->
+   <main>
+         <div id="content">
+            <h1>HTML, CSS, and JS</h1>
+            <p>The foundational technologies that power websites and web applications</p>
+            <hr>
+            <div id="Logos">
+                <img src="https://wddbyui.github.io/wdd131/images/trifecta.png" alt="JS, CSS, and HTML logos">
+                    <div id="topics">
+                        <h2>HyperText Markup Language</h2>
+                        <ul class="list">
+                            <li>Defines the structure and content of a web page.</li>
+                            <li>Without HTML there's nothing for the browser to display.</li>
+                        </ul>
+                        <h2>Cascading Style Sheets</h2>
+                        <ul class="list">
+                            <li>Controls how the HTML elements look.</li>
+                            <li>Without CSS pages look plain and unstyled.</li>
+                        </ul>
+                        <h2>JavaScript</h2>
+                        <ul class="list">
+                            <li>Adds interactivity and dynamic behavior.</li>
+                            <li>Without JavaScript nothing on the page responds dynamically to user actions.</li>
+                        </ul>
+                    </div>
+            </div>
         </div>
-
-        <div id="Middle">
-            <p>The university does this by:</p>
-        </div>
-
-        <div id="key-points"> 
-            <ol>1. Building testimonies of the restored gospel of Jesus Christ.</ol>
-            <ol>2. Providing a high-quality education.</ol>
-            <ol>3. Serving as many students as possible.</ol>
-            <ol>4. Delivering affordable education.</ol>
-        </div>
-
-        <!-- BYUI Logo -->
-        <img 
-            id="byui-logo"
-            src="../../Images/byui-logo-blue.webp"
-            alt="BYUI Logo">
-
-    </main>
-
+   </main>
+                    
 </body>
+
 </html>
