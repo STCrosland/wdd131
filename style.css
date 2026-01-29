@@ -8,8 +8,9 @@ html, body {
 body {
     min-height: 100vh;
     background: url("images/wdd131-background.jpeg") no-repeat center center fixed;
-    background-size: flex;
+    background-size: cover;
     background-color: #000;
+    max-width: 700px;
 }
 
 /*=== Fonts ===*/
@@ -222,6 +223,9 @@ footer {
     }
      .prove-projects {
         grid-template-columns: 1fr 1fr;
+    }
+    body{
+        max-width: none;
     }
 }
 
