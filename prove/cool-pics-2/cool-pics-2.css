@@ -10,7 +10,8 @@ header {
   color: white;
   text-align: center;
   padding: 8px;
-}
+  position: relative;
+  padding: 1rem 0 2.5rem;}
 
 /* ===== Menu Button ===== */
 .menu-btn {
@@ -20,6 +21,15 @@ header {
   color: white;
   font-size: 1.2rem;
 }
+
+.change .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
+}  
 
 /* ===== Nav ===== */
 nav {
@@ -33,11 +43,13 @@ nav a {
   display: block;
   text-align: center;
   text-decoration: none;
-  border-top: 1px solid gray;
+  text-decoration: underline;   
+  color: white;
 }
 
 nav a:hover {
-  color: #0011f8;
+ color: #dbe4ff;
+
 }
 
 .hide{
@@ -127,11 +139,26 @@ dialog img {
 Google said the rendering rate is larger with chrome so I cant see it as the mobile verion
 on my laptop. */
 @media screen and (min-width: 700px) {
-  .gallery {
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
+
+  nav {
+    justify-content: center;
+    display: flex;
+    gap: 1rem;
+  }
+
+  nav a {
+    border: none;
+  }
+
+  .menu-btn {
+    display: none;
+  }
+
+  nav.hide {
+    display: flex;
   }
 }
+
 
 /* ===== Desktop ===== */
 @media screen and (min-width: 1000px) {
