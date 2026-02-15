@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="create a blog that use an object array in your JS file to bring in each book article dynamically. ">
+  <meta name="author" content="Spencer T. Crosland">
+  <title>Build a Blog Part 2</title>
+
+  <link rel="stylesheet" href="build-a-blog-2.css">
+  <script defer src="build-a-blog-2.js"></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <div class="page">
+    <header class="header">
+      <h1>Kids Read For Fun</h1>
+      <nav aria-label="main menu">
+        <a href="#">About</a>
+        <a href="#">Archive</a>
+        <a href="#">Search</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <!-- JS will inject all the book posts here -->
+      <section id="articles" class="articles"></section>
+    </main>
+
+    <footer>
+      <p>&copy; Jane Doe</p>
+    </footer>
+  </div>
+</body>
+</html>

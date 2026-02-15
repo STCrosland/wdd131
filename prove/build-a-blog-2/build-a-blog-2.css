@@ -69,7 +69,7 @@ header nav {
   padding-top: 0.5rem;
   border-top: 2px solid #d9b98f;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   gap: 1.5rem;
 
   width: calc(100% + 2rem);
@@ -86,32 +86,42 @@ header nav a {
   font-size: 0.9rem;
 }
 
+/* === ARTICLES WRAPPER (PART 2) === */
+.articles {
+  display: grid;
+}
+
 /* === MAIN GRID — MOBILE === */
 .content-grid {
   display: grid;
-  grid-template-columns: 1fr 140px;
+  grid-template-columns: 1fr;
   grid-template-areas:
-    ". meta"
-    "post post";
-  gap: 0.75rem 1rem;
+    "meta"
+    "post";
+  gap: 0.75rem;
   padding: 1rem;
   border-bottom: 2px solid #d9b98f;
+}
+
+/* remove bottom border on last article so it matches cleanly */
+.content-grid:last-child {
+  border-bottom: none;
 }
 
 /* === META === */
 .meta {
   grid-area: meta;
-  text-align: right;
+  text-align: left;
   font-size: 0.9rem;
   line-height: 1.8;
 }
 
 .meta p {
-  margin: 0 0 0.6rem;
+  margin: 0 0 0.35rem;
 }
 
-.stars {
-  color: #d6b45a;
+/* targets your actual star span in HTML */
+.meta [role="img"] {
   letter-spacing: 2px;
 }
 
@@ -137,6 +147,7 @@ header nav a {
 .description {
   font-size: 0.95rem;
   text-align: left;
+  margin: 0;
 }
 
 /* === FOOTER === */
@@ -163,11 +174,13 @@ footer {
     grid-template-columns: 180px 1fr;
     grid-template-areas: "meta post";
     gap: 2rem;
+    align-items: start;
   }
 
   .meta {
     border-right: 2px solid #d9b98f;
     padding-right: 1rem;
+    text-align: right;
   }
 
   .post {
@@ -178,3 +191,4 @@ footer {
     width: 260px;
   }
 }
+
