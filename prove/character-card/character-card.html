@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Character Card</title>
+  <link rel="stylesheet" href="character-card.css" />
+  <script defer src="character-card.js"></script>
+</head>
+
+<body>
+  <main class="page">
+    <section class="card" aria-label="Character Card">
+      <img
+        id="charImg"
+        class="card__img"
+        src="images/image.png"
+        alt="Swamp beast standing in shallow water"
+      />
+
+      <header class="card__namebar">
+        <h1 id="charName" class="card__name">Snortleblat</h1>
+      </header>
+
+      <div class="card__body">
+        <p class="card__line"><strong>Class:</strong> <span id="charClass">Swamp Beast Diplomat</span></p>
+        <p class="card__line"><strong>Level:</strong> <span id="charLevel">8</span></p>
+        <p class="card__line"><strong>Health:</strong> <span id="charHealth">0</span></p>
+
+        <div class="card__actions">
+          <button id="btnAttacked" class="btn" type="button">Attacked</button>
+          <button id="btnLevelUp" class="btn" type="button">Level Up</button>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
