@@ -1,68 +1,54 @@
-// Character object with properties + methods (required)
-const character = {
-  name: "Swamp Beast Diplomat",
-  class: "Diplomat",
-  level: 1,
-  health: 100,
-  image: {
-    src: "https://static.wikia.nocookie.net/delicious-in-dungeon/images/0/0f/Swamp_Beast_Diplomat.png",
-    alt: "A swamp beast diplomat character portrait."
-  },
 
-  attacked() {
-    if (this.health <= 0) return "The character is already dead.";
+const aCourse = {
+    code: 'CSE121b',
+    name: 'Javascript Language',
+    logo: 'images/js-logo.jpg',
+    sections: [
+    { sectionNum: 1, roomNum: 'STC 353', enrolled: 26, days: 'TTh', instructor: 'Bro T'},
+    { sectionNum: 2, roomNum: 'STC 347', enrolled: 28, days: 'TTh', instructor: 'Sis A'}
+    ],
+    enrollStudent: function (sectionNum) {
+        // find the right section...Array.findIndex will work here
+        const sectionIndex = this.sections.findIndex(
+          (section) => section.sectionNum == sectionNum
+        );
+        if (sectionIndex >= 0) {
+          this.sections[sectionIndex].enrolled++;
+          renderSections(this.sections);
+        }
+      }
+  };
+            
+console.log(aCourse.code);
+console.log(aCourse.name);
 
-    this.health -= 20;
+document.querySelector('#courseName').textContent = aCourse.name;
+document.querySelector('#courseCode').textContent = aCourse.code;
 
-    if (this.health <= 0) {
-      this.health = 0;
-      return `${this.name} has died.`;
-    }
+document.querySelector('img').setAttribute("src", aCourse.logo);
+document.querySelector('img').setAttribute("alt", aCourse.logo);
+document.querySelector('img').style.width='100px';
 
-    return `${this.name} was attacked! Health is now ${this.health}.`;
-  },
+console.log(aCourse.sections[1].roomNum);
 
-  levelUp() {
-    this.level += 1;
-    return `${this.name} leveled up! Level is now ${this.level}.`;
-  }
-};
-
-// ---- DOM wiring ----
-const elName = document.querySelector("#charName");
-const elClass = document.querySelector("#charClass");
-const elLevel = document.querySelector("#charLevel");
-const elHealth = document.querySelector("#charHealth");
-const elImage = document.querySelector("#charImage");
-const elMessage = document.querySelector("#message");
-
-const attackBtn = document.querySelector("#attackBtn");
-const levelUpBtn = document.querySelector("#levelUpBtn");
-
-function render(message = "") {
-  elName.textContent = character.name;
-  elClass.textContent = character.class;
-  elLevel.textContent = String(character.level);
-  elHealth.textContent = String(character.health);
-
-  elImage.src = character.image.src;
-  elImage.alt = character.image.alt;
-
-  elMessage.textContent = message;
-
-  // Optional: disable attack if dead
-  attackBtn.disabled = character.health <= 0;
+function sectionTemplate(section) {
+    return `<tr>
+      <td>${section.sectionNum}</td>
+      <td>${section.roomNum}</td>
+      <td>${section.enrolled}</td>
+      <td>${section.days}</td>
+      <td>${section.instructor}</td></tr>`
 }
 
-attackBtn.addEventListener("click", () => {
-  const msg = character.attacked();
-  render(msg);
-});
+function renderSections(sections) {
+const html = sections.map(sectionTemplate);
+document.querySelector("#sections").innerHTML = html.join("");
+}
 
-levelUpBtn.addEventListener("click", () => {
-  const msg = character.levelUp();
-  render(msg);
-});
+renderSections(aCourse.sections);
 
-// initial render
-render("Ready.");
+document.querySelector("#enrollStudent").addEventListener("click", function () {
+    const sectionNum = document.querySelector("#sectionNumber").value;
+    aCourse.enrollStudent(sectionNum);
+});
+          
