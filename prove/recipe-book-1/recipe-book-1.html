@@ -1,0 +1,107 @@
+<!-- /recipes/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recipe Book</title>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+
+  <!-- Open Graph (Facebook, LinkedIn, etc.) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Recipe Book">
+  <meta property="og:description" content="Find and save your favorite recipes.">
+  <meta property="og:url" content="Your URL">
+  <meta property="og:image" content="images/social-preview-image.png">
+
+  <!-- X Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Recipe Book">
+  <meta name="twitter:description" content="Find and save your favorite recipes.">
+  <meta name="twitter:image" content="images/social-preview-image.png">
+
+  <!-- One favicon (ICO works everywhere) -->
+  <link rel="icon" href="/favicon.ico">
+
+  <!-- One Apple Touch Icon (iOS home screen) -->
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+  <link rel="stylesheet" href="recipe-book-1.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <img class="brand__logo" src="images/recipe-book-icon.svg" alt="Recipe book logo">
+      <h1 class="brand__title">Recipe Book</h1>
+    </div>
+
+    <form class="search" action="#" role="search">
+      <label class="sr-only" for="q">Search recipes</label>
+      <input id="q" class="search__input" type="search" placeholder="Search recipes…" />
+      <button class="search__btn" type="submit" aria-label="Search">
+        <img class="search__icon" src="images/search-icon.svg" alt="">
+      </button>
+    </form>
+  </header>
+
+  <main class="page">
+    <section class="recipe">
+      <div class="recipe__image">
+        <img src="images/apple-crisp.jpg" alt="Apple crisp in a baking dish">
+      </div>
+
+      <div class="recipe__content">
+        <h2 class="recipe__title">Apple Crisp</h2>
+
+        <div class="recipe__meta">
+          <span
+            class="rating"
+            role="img"
+            aria-label="Rating: 4 out of 5 stars"
+          >
+            <span aria-hidden="true" class="icon-star">⭐</span>
+            <span aria-hidden="true" class="icon-star">⭐</span>
+            <span aria-hidden="true" class="icon-star">⭐</span>
+            <span aria-hidden="true" class="icon-star">⭐</span>
+            <span aria-hidden="true" class="icon-star-empty">☆</span>
+          </span>
+          <span class="recipe__time">45 mins</span>
+          <span class="recipe__servings">8 servings</span>
+        </div>
+
+        <p class="recipe__desc">
+          A cozy, classic apple crisp with tender cinnamon apples and a buttery oat topping.
+          Perfect with vanilla ice cream.
+        </p>
+
+        <div class="recipe__tags">
+          <span class="tag">Dessert</span>
+          <span class="tag">Fall</span>
+          <span class="tag">Easy</span>
+        </div>
+
+        <a class="recipe__link" href="#">View Recipe</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer__inner">
+      <a href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">
+        Recipe icons created by Freepik - Flaticon
+      </a>
+
+      <div class="social">
+        <!-- Social media icons provided under CC from https://www.iconfinder.com/AlfredoCreates  -->
+        <a href="#"><img src="images/instagram_icon.svg" alt="instagram icon"></a>
+        <a href="#"><img src="images/youtube_icon.svg" alt="youtube icon"></a>
+        <a href="#"><img src="images/pinterest_icon.svg" alt="pinterest icon"></a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
