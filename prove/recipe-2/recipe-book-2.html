@@ -1,0 +1,313 @@
+<!-- /recipes/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Recipe Book</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+ <script defer src="recipe-book-2.js"> </script>
+
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Recipe Book">
+<meta property="og:description" content="Find and save your favorite recipes.">
+<meta property="og:url" content="Your URL">
+<meta property="og:image" content="images/social-preview-image.png">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Recipe Book">
+<meta name="twitter:description" content="Find and save your favorite recipes.">
+<meta name="twitter:image" content="images/social-preview-image.png">
+
+<link rel="icon" href="favicon.ico">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+<link rel="stylesheet" href="recipe-book-1.css">
+</head>
+
+<body>
+
+<header class="site-header">
+<div class="brand">
+<img class="brand__logo" src="images/recipe-book.png" alt="Recipe book logo">
+<h1 class="brand__title">Recipe Book</h1>
+</div>
+
+<form class="search" action="#" role="search">
+<label class="sr-only" for="q">Search recipes</label>
+<input id="q" class="search__input" type="search" placeholder="Search recipes…">
+<button class="search__btn" type="submit" aria-label="Search">
+<img class="search__icon" src="images/search.svg" alt="">
+</button>
+</form>
+</header>
+
+<main class="page">
+
+<!-- Recipe 1 -->
+<section class="recipe" aria-label="Apple crisp recipe card">
+<div class="recipe__image">
+<img src="images/apple-crisp.jpg" alt="Apple crisp in a baking dish">
+</div>
+
+<div class="recipe__content">
+<h2 class="recipe__title">Apple Crisp</h2>
+
+<div class="recipe__meta">
+<span class="rating" role="img" aria-label="Rating: 4 out of 5 stars">
+<span aria-hidden="true">⭐</span>
+<span aria-hidden="true">⭐</span>
+<span aria-hidden="true">⭐</span>
+<span aria-hidden="true">⭐</span>
+<span aria-hidden="true">☆</span>
+</span>
+<span class="recipe__time">45 mins</span>
+<span class="recipe__servings">8 servings</span>
+</div>
+
+<p class="recipe__desc">
+A cozy, classic apple crisp with tender cinnamon apples and a buttery oat topping.
+</p>
+
+<div class="recipe__tags">
+<span class="tag">Dessert</span>
+<span class="tag">Fall</span>
+<span class="tag">Easy</span>
+</div>
+
+<a class="recipe__link" href="#">View Recipe</a>
+</div>
+</section>
+
+<!-- Recipe 2 -->
+<section class="recipe" aria-label="Black beans and rice recipe card">
+<div class="recipe__image">
+<img src="images/black-beans-and-rice.jpg" alt="Bowl of black beans and rice">
+</div>
+
+<div class="recipe__content">
+<h2 class="recipe__title">Black Beans & Rice</h2>
+
+<div class="recipe__meta">
+<span class="rating" role="img" aria-label="Rating: 5 out of 5 stars">
+<span aria-hidden="true">⭐</span>
+<span aria-hidden="true">⭐</span>
+<span aria-hidden="true">⭐</span>
+<span aria-hidden="true">⭐</span>
+<span aria-hidden="true">⭐</span>
+</span>
+<span class="recipe__time">30 mins</span>
+<span class="recipe__servings">4 servings</span>
+</div>
+
+<p class="recipe__desc">
+A quick, flavorful meal with seasoned black beans served over warm rice.
+</p>
+
+<div class="recipe__tags">
+<span class="tag">Dinner</span>
+<span class="tag">Vegetarian</span>
+<span class="tag">Budget</span>
+</div>
+
+<a class="recipe__link" href="#">View Recipe</a>
+</div>
+</section>
+
+<!-- Recipe 3 -->
+<section class="recipe" aria-label="Chicken curry recipe card">
+<div class="recipe__image">
+<img src="images/chicken-curry.webp" alt="Bowl of chicken curry">
+</div>
+
+<div class="recipe__content">
+<h2 class="recipe__title">Chicken Curry</h2>
+
+<div class="recipe__meta">
+<span class="rating" role="img" aria-label="Rating: 4 out of 5 stars">
+<span aria-hidden="true">⭐</span>
+<span aria-hidden="true">⭐</span>
+<span aria-hidden="true">⭐</span>
+<span aria-hidden="true">⭐</span>
+<span aria-hidden="true">☆</span>
+</span>
+<span class="recipe__time">45 mins</span>
+<span class="recipe__servings">6 servings</span>
+</div>
+
+<p class="recipe__desc">
+Savory chicken curry simmered with spices for a comforting dinner.
+</p>
+
+<div class="recipe__tags">
+<span class="tag">Dinner</span>
+<span class="tag">Comfort</span>
+<span class="tag">Spicy</span>
+</div>
+
+<a class="recipe__link" href="#">View Recipe</a>
+</div>
+</section>
+
+<!-- Recipe 4 -->
+<section class="recipe" aria-label="Chocolate chip cookies recipe card">
+<div class="recipe__image">
+<img src="images/chocolate-chip-cookies.jpg" alt="Plate of chocolate chip cookies">
+</div>
+
+<div class="recipe__content">
+<h2 class="recipe__title">Chocolate Chip Cookies</h2>
+
+<div class="recipe__meta">
+<span class="rating" role="img" aria-label="Rating: 5 out of 5 stars">
+<span aria-hidden="true">⭐</span>
+<span aria-hidden="true">⭐</span>
+<span aria-hidden="true">⭐</span>
+<span aria-hidden="true">⭐</span>
+<span aria-hidden="true">⭐</span>
+</span>
+<span class="recipe__time">25 mins</span>
+<span class="recipe__servings">24 cookies</span>
+</div>
+
+<p class="recipe__desc">
+Soft and chewy cookies loaded with chocolate chips.
+</p>
+
+<div class="recipe__tags">
+<span class="tag">Dessert</span>
+<span class="tag">Baking</span>
+<span class="tag">Classic</span>
+</div>
+
+<a class="recipe__link" href="#">View Recipe</a>
+</div>
+</section>
+
+<!-- Recipe 5 -->
+<section class="recipe" aria-label="Escalopes de poulet a la creme recipe card">
+<div class="recipe__image">
+<img src="images/escalopes-de-poulet-a-la-creme.webp" alt="Chicken cutlets in creamy sauce">
+</div>
+
+<div class="recipe__content">
+<h2 class="recipe__title">Escalopes De Poulet A La Creme</h2>
+
+<div class="recipe__meta">
+<span class="rating" role="img" aria-label="Rating: 4 out of 5 stars">
+<span aria-hidden="true">⭐</span>
+<span aria-hidden="true">⭐</span>
+<span aria-hidden="true">⭐</span>
+<span aria-hidden="true">⭐</span>
+<span aria-hidden="true">☆</span>
+</span>
+<span class="recipe__time">35 mins</span>
+<span class="recipe__servings">4 servings</span>
+</div>
+
+<p class="recipe__desc">
+Tender chicken cutlets in a rich creamy sauce.
+</p>
+
+<div class="recipe__tags">
+<span class="tag">Dinner</span>
+<span class="tag">French</span>
+<span class="tag">Creamy</span>
+</div>
+
+<a class="recipe__link" href="#">View Recipe</a>
+</div>
+</section>
+
+<!-- Recipe 6 -->
+<section class="recipe" aria-label="German gooseberry cake recipe card">
+<div class="recipe__image">
+<img src="images/german-gooseberry-cake.jpg" alt="Slice of gooseberry cake">
+</div>
+
+<div class="recipe__content">
+<h2 class="recipe__title">German Gooseberry Cake</h2>
+
+<div class="recipe__meta">
+<span class="rating" role="img" aria-label="Rating: 4 out of 5 stars">
+<span aria-hidden="true">⭐</span>
+<span aria-hidden="true">⭐</span>
+<span aria-hidden="true">⭐</span>
+<span aria-hidden="true">⭐</span>
+<span aria-hidden="true">☆</span>
+</span>
+<span class="recipe__time">1 hr</span>
+<span class="recipe__servings">8 servings</span>
+</div>
+
+<p class="recipe__desc">
+Traditional German cake made with tart gooseberries.
+</p>
+
+<div class="recipe__tags">
+<span class="tag">Dessert</span>
+<span class="tag">German</span>
+<span class="tag">Baking</span>
+</div>
+
+<a class="recipe__link" href="#">View Recipe</a>
+</div>
+</section>
+
+<!-- Recipe 7 -->
+<section class="recipe" aria-label="Sweet potato waffle recipe card">
+<div class="recipe__image">
+<img src="images/sweet-potato-waffle-md.jpg" alt="Sweet potato waffle with syrup">
+</div>
+
+<div class="recipe__content">
+<h2 class="recipe__title">Sweet Potato Waffle</h2>
+
+<div class="recipe__meta">
+<span class="rating" role="img" aria-label="Rating: 4 out of 5 stars">
+<span aria-hidden="true">⭐</span>
+<span aria-hidden="true">⭐</span>
+<span aria-hidden="true">⭐</span>
+<span aria-hidden="true">⭐</span>
+<span aria-hidden="true">☆</span>
+</span>
+<span class="recipe__time">20 mins</span>
+<span class="recipe__servings">4 waffles</span>
+</div>
+
+<p class="recipe__desc">
+Fluffy waffles made with sweet potato for a warm breakfast.
+</p>
+
+<div class="recipe__tags">
+<span class="tag">Breakfast</span>
+<span class="tag">Waffles</span>
+<span class="tag">Sweet</span>
+</div>
+
+<a class="recipe__link" href="#">View Recipe</a>
+</div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+<div class="footer__inner">
+<a href="https://www.flaticon.com/free-icons/recipe">
+Recipe icons created by Freepik - Flaticon
+</a>
+
+<div class="social">
+<a href="#"><img src="images/instagram_icon.svg" alt="Instagram icon"></a>
+<a href="#"><img src="images/youtube_icon.svg" alt="YouTube icon"></a>
+<a href="#"><img src="images/pinterest_icon.svg" alt="Pinterest icon"></a>
+</div>
+</div>
+</footer>
+
+</body>
+</html>
