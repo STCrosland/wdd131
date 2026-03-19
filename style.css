@@ -260,6 +260,54 @@ nav a:hover {
     box-shadow: 0 0 20px #ffffff;
 }
 
+/* === Final Project === */
+#final-project {
+    width: 90%;
+    max-width: 1400px;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 40px;
+}
+
+#final-project > h2 {
+    color: #fff;
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+#final-project img {
+    height: 350px;
+    width: 350px;
+    border: 5px solid #f9cb00;
+    border-radius: 20px;
+    box-shadow: 0 0 20px #ffffff;
+}
+
+#site-plan {
+    width: 90%;
+    max-width: 1400px;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 40px;
+}
+
+#site-plan > h2 {
+    color: #fff;
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+#site-plan img {
+    height: 350px;
+    width: 350px;
+    border: 5px solid #f9cb00;
+    border-radius: 20px;
+    box-shadow: 0 0 20px #ffffff;
+}
 /* === FOOTER === */
 footer {
     margin: 20px auto 0;
