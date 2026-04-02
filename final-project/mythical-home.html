@@ -3,14 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Catalog of mythcal creatures from a variety of cultures">
-    <meta name="author" content="Stpencer T. Crosland">
+    <meta name="description" content="Catalog of mythical creatures from a variety of origins">
+    <meta name="author" content="Spencer T. Crosland">
 
     <title>Mythical Index</title>
-     <link rel="stylesheet" href="mythical-index.css" />
-    <script defer src="mythical-index.js"> </script>
+
+    <link rel="stylesheet" href="mythical-index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+    <script defer src="mythical-index.js"></script>
+    <link rel="icon" type="image/jpeg" href="images/mythical-index-logo.jpg">
 </head>
+
 <body>
-    
+
+<header>
+    <div class="logo">
+        <img src="images/mythical-index-logo.jpg" alt="Mythical Index Logo">
+        <span>Mythical Index</span>
+    </div>
+
+    <nav>
+        <a href="mythical-home.html" class="active">Home</a>
+        <a href="creatures.html">Creatures</a>
+        <a href="origins.html">Origins</a>
+    </nav>
+</header>
+
+<main class="container">
+
+<section class="intro">
+    <h1>Welcome to the Mythical Index</h1>
+    <p>
+        Explore legendary creatures from origins around the world. Learn their stories, abilities,
+        and the myths that shaped them.
+    </p>
+</section>
+
+<section class="featured">
+    <h2>Featured Creatures</h2>
+    <div id="featured-creatures" class="card-grid"></div>
+</section>
+
+<aside id="home-detail" class="detail-panel hidden">
+    <button id="close-home-detail" class="close-btn">×</button>
+
+    <h2 id="home-detail-name"></h2>
+    <img id="home-detail-image" alt="">
+
+    <h3>Origin</h3>
+    <p id="home-detail-origin"></p>
+
+    <h3>Description</h3>
+    <p id="home-detail-description"></p>
+
+    <h3>Lore</h3>
+    <p id="home-detail-lore"></p>
+
+    <h3>Abilities</h3>
+    <p id="home-detail-abilities"></p>
+</aside>
+
+</main>
+
+<footer>
+     <a href="https://stcrosland.github.io/wdd131/" target="_blank">  
+            <img src="images/crosland-sheild-logo.jpeg" alt="shelid with read and white cross and crosland banner">
+        </a>
+    <p>&copy; 2026 Mythical Index</p>
+</footer>
+
 </body>
 </html>
